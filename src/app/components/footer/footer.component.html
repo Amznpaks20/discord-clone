@@ -1,0 +1,55 @@
+<div #footer class="footer">
+  <div class="footerContent">
+    <div class="infoBox">
+      <h4>IMAGINE A<br /> PLACE</h4>
+      <div class="language">
+        <mat-select [(value)]="selected">
+          <mat-select-trigger>
+            <img src="{{selected.imgUrl}}" alt="">
+            {{selected.language}}
+          </mat-select-trigger>
+          <mat-option *ngFor="let lng of languages" [value]="lng"><img src={{lng.imgUrl}} alt="">{{lng.language}}
+          </mat-option>
+        </mat-select>
+      </div>
+
+      <div class="socialMedia"></div>
+    </div>
+    <div class="product">
+      <h4>Product</h4>
+      <a href="#footer">Download</a>
+      <a href="#footer">Nitro</a>
+      <a href="#footer">Status</a>
+    </div>
+    <div class="company">
+      <h4>Company</h4>
+      <a href="#footer">About</a>
+      <a href="#footer">Jobs</a>
+      <a href="#footer">Branding</a>
+      <a href="#footer">Newsroom</a>
+    </div>
+    <div class="resources">
+      <h4>Resources</h4>
+      <a href="#footer">College</a>
+      <a href="#footer">Support</a>
+      <a href="#footer">Safety</a>
+      <a href="#footer">Blog</a>
+      <a href="#footer">Feedback</a>
+      <a href="#footer">Developers</a>
+      <a href="#footer">Streamkit</a>
+    </div>
+    <div class="policies">
+      <h4>Policies</h4>
+      <a href="#footer">Terms</a>
+      <a href="#footer">Privacy</a>
+      <a href="#footer">Cookie Settings</a>
+      <a href="#footer">Guidelines</a>
+      <a href="#footer">Acknowledgments</a>
+      <a href="#footer">Licenses</a>
+      <a href="#footer">Moderation</a>
+    </div>
+  </div>
+  <div class="registerContainer">
+    <button>Sign Up</button>
+  </div>
+</div>
